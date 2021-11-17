@@ -1,10 +1,10 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap'); */
-
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Permanent+Marker&display=swap');
 html {
-    background-color: #227878;
+    background-color: #696969;
     color: #dd9898;
     font-family: 'Permanent Marker';
-    font-weight: 900;
+    font-weight: 400;
     font-style: normal;
     margin: auto;
     height: 100%;
@@ -12,6 +12,7 @@ html {
 }
 
 body {
+    background-color: #227878;
     height: 100%;
     width: 100%;
     margin: auto;
@@ -20,11 +21,12 @@ body {
 .container {
     display: grid;
     grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 100%;
+    grid-template-rows: 10% 80%;
     gap: 0px 0px;
     grid-auto-flow: row;
-    height: 100%;
-    grid-template-areas: "settings center help";
+    height: 90%;
+    grid-template-areas: "settings center help" "body body body";
+    ;
     text-align: center;
 }
 
@@ -40,14 +42,46 @@ body {
     grid-area: center;
 }
 
+.body {
+    grid-area: body;
+}
+
 h1 {
     text-decoration-style: dotted;
 }
 
 #settings,
 #help {
-    margin-top: 10px;
+    margin-top: 10%;
     font-size: 200%;
+    cursor: pointer;
+}
+
+#middle {
+    margin: auto;
+    color: #ffffff;
+    font-family: 'Dosis', cursive;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 150%;
+}
+
+.id * {
+    background-color: #227878;
+    border: 0px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.id {
+    margin-top: 15%;
+}
+
+.id input {
+    width: 75%;
+    height: 50px;
+    font-weight: 800;
+    text-align: center;
+    color: #ffffff;
 }
 
 #button {
@@ -58,7 +92,10 @@ h1 {
     font-size: 200%;
     position: absolute;
     margin: auto;
-    top: 90%;
+    text-align: center;
+    width: 20vh;
+    height: 5vh;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, 0);
     color: #227878;

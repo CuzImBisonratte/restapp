@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,15 +16,24 @@
         </div>
         <div class="center">
             <h1>Restaurapp</h1>
-            <div id="button">
-                <span>Weiter <i class="fas fa-arrow-right"></i></span>
-            </div>
         </div>
         <div class="help">
             <i id="help" class="far fa-question-circle"></i>
         </div>
+        <div class="body">
+            <div id="middle">
+                <div class="id" id="restaurant_id">
+                    <input type="text" name="restaurant" id="restaurant"><br>Restaurant-Nummer
+                </div>
+                <div class="id" id="table_id">
+                    <input type="text" name="table" id="table"><br>Tisch-Nummer
+                </div>
+            </div>
+        </div>
     </div>
-
+    <div id="button">
+        <span>Weiter <i class="fas fa-arrow-right"></i></span>
+    </div>
 
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/b5c383da68.js" crossorigin="anonymous"></script>
