@@ -50,8 +50,8 @@ h1 {
     text-decoration-style: dotted;
 }
 
-#settings,
-#help {
+.settings,
+.help {
     margin-top: 10%;
     font-size: 200%;
     cursor: pointer;
@@ -99,4 +99,9 @@ h1 {
     left: 50%;
     transform: translate(-50%, 0);
     color: #227878;
+}
+
+#settings,
+#help {
+    display: none;
 }

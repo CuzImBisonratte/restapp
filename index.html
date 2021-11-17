@@ -12,13 +12,13 @@
 <body>
     <div class="container">
         <div class="settings">
-            <i id="settings" class="fas fa-cog"></i>
+            <i onclick="open_settings();" class="fas fa-cog"></i>
         </div>
         <div class="center">
             <h1>Restaurapp</h1>
         </div>
         <div class="help">
-            <i id="help" class="far fa-question-circle"></i>
+            <i onclick="open_help();" class="far fa-question-circle"></i>
         </div>
         <div class="body">
             <div id="middle">
@@ -31,9 +31,12 @@
             </div>
         </div>
     </div>
-    <div id="button">
+    <div onclick="submit();" id="button">
         <span>Weiter <i class="fas fa-arrow-right"></i></span>
     </div>
+
+    <div id="settings"></div>
+    <div id="help"></div>
 
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/b5c383da68.js" crossorigin="anonymous"></script>
